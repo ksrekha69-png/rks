@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | About</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .skill-badge {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            transition: all var(--transition-speed);
+        }
+        .skill-badge:hover {
+            background: var(--accent-color);
+            color: #fff;
+        }
+        @media (max-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Port<span>folio.</span></a>
+            <button class="mobile-menu-btn">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container section">
+        <div style="width: 100%;">
+            <h2 class="section-title fade-in">About <span>Me</span></h2>
+            
+            <div class="about-content">
+                <div class="glass-card fade-in delay-1">
+                    <h3>My Journey</h3>
+                    <p>I am a dedicated professional with a passion for creating impactful and innovative solutions. With a strong background in my field, I strive for excellence in every project I undertake.</p>
+                    <p>My approach combines analytical thinking with creative problem-solving, ensuring that the end result is not just functional, but also aesthetically pleasing and user-centric.</p>
+                    <div style="margin-top: 2rem;">
+                        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                    </div>
+                </div>
+
+                <div class="glass-card fade-in delay-2">
+                    <h3>Core Skills</h3>
+                    <p>Here are some of the key skills I've developed over my journey:</p>
+                    <div class="skills-container">
+                        <span class="skill-badge">Problem Solving</span>
+                        <span class="skill-badge">Project Management</span>
+                        <span class="skill-badge">Web Development</span>
+                        <span class="skill-badge">UI/UX Design</span>
+                        <span class="skill-badge">Communication</span>
+                        <span class="skill-badge">Team Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
